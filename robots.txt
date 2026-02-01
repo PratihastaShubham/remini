@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /favicon/
+Disallow: /assets/
+
+Sitemap: https://pokemonreminiscencia.site/sitemap.xml

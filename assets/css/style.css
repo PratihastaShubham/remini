@@ -1,0 +1,159 @@
+/* Simple Pink Theme for Pokemon Reminiscencia */
+:root {
+    --pink: #ec4899;
+    --pink-dark: #be185d;
+    --pink-light: #fdf2f8;
+    --text: #333;
+    --bg: #fff;
+    --border: #eee;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: var(--text);
+    background: var(--bg);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+h1 {
+    color: var(--pink);
+    font-size: 3rem;
+    margin-bottom: 10px;
+    border: none;
+    padding: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    header p {
+        color: #aaa;
+    }
+}
+
+h2 {
+    color: var(--pink-dark);
+    border-left: 5px solid var(--pink);
+    padding-left: 15px;
+}
+
+a {
+    color: var(--pink-dark);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--pink);
+    text-decoration: none;
+}
+
+nav a {
+    margin-right: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--pink);
+}
+
+.stats {
+    background: var(--pink-light);
+    padding: 30px;
+    border: 1px solid var(--pink);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box strong {
+    color: var(--pink-dark);
+}
+
+.card {
+    border: 1px solid var(--border);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.pink-card {
+    background: var(--pink-light);
+    border-left: 5px solid var(--pink);
+}
+
+button,
+.btn {
+    background: var(--pink);
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+button:hover,
+.btn:hover {
+    background: var(--pink-dark);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+li::marker {
+    color: var(--pink);
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer {
+    margin-top: 80px;
+    padding: 40px 20px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #e2e8f0;
+        --bg: #0f172a; /* Slate-dark background */
+        --border: #334155;
+        --pink-light: rgba(236, 72, 153, 0.1);
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: #fff;
+    }
+}
