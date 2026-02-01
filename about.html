@@ -21,6 +21,25 @@
     <meta property="og:url" content="https://pokemonreminiscencia.site/about.html">
     <meta property="og:type" content="article">
 
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://pokemonreminiscencia.site/"
+        },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://pokemonreminiscencia.site/about.html"
+        }]
+    }
+    </script>
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -29,10 +48,9 @@
         <h1>About</h1>
         <p>A simple guide to the most ambitious Pokémon fan project.</p>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="./">Home</a>
             <a href="download.html">Download</a>
             <a href="faq.html">FAQ</a>
-            <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
@@ -47,24 +65,38 @@
         </section>
 
         <section id="what-we-offer">
-            <h2>Why Play Reminiscencia?</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-                <div class="pink-card" style="padding: 20px;">
-                    <strong>Story Driven</strong>
-                    <p style="font-size: 0.9em; margin-top: 10px;">A 15+ hour narrative following Anthony and Phione across distant, atmospheric islands.</p>
+            <h2>Detailed Game Mechanics</h2>
+            <div class="card">
+                <p>Pokémon Reminiscencia is built on a foundation of <strong>strategic choice</strong>. Here is a deeper look at the systems that make it unique:</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;">
+                    <div class="pink-card" style="padding: 20px;">
+                        <strong>The Heart Scale System</strong>
+                        <p style="font-size: 0.95em; margin-top: 10px;">Instead of traditional EVs and IVs, players use "Heart Scales" to instantly modify a Pokémon's stats, nature, and ability. This ensures you can pivot your strategy between every battle without a single second of grinding.</p>
+                    </div>
+                    <div class="pink-card" style="padding: 20px;">
+                        <strong>Branching Map Design</strong>
+                        <p style="font-size: 0.95em; margin-top: 10px;">Each chapter takes place on a world map with multiple nodes. You might choose between a "Wild" node for a new recruit, a "Shop" node for items, or a "Rest" node to heal. Choosing your path is as important as the battles themselves.</p>
+                    </div>
+                    <div class="pink-card" style="padding: 20px;">
+                        <strong>Custom Animations</strong>
+                        <p style="font-size: 0.95em; margin-top: 10px;">The game features thousands of custom pixel art animations and unique UI elements that give it a "Medieval Scroll" aesthetic, far removed from the modern high-tech menus of the main series.</p>
+                    </div>
+                    <div class="pink-card" style="padding: 20px;">
+                        <strong>Endless Replayability</strong>
+                        <p style="font-size: 0.95em; margin-top: 10px;">Beyond the 15-hour story mode, the "Replayable Mode" offers a pure roguelite experience where the world is procedurally generated, ensuring no two runs are ever the same.</p>
+                    </div>
                 </div>
-                <div class="pink-card" style="padding: 20px;">
-                    <strong>True Strategy</strong>
-                    <p style="font-size: 0.9em; margin-top: 10px;">Every Pokémon is set to Level 50. Victory depends on your choices, not your level.</p>
-                </div>
-                <div class="pink-card" style="padding: 20px;">
-                    <strong>Complete Pokedex</strong>
-                    <p style="font-size: 0.9em; margin-top: 10px;">Includes all officially released Pokémon with high-quality custom animations.</p>
-                </div>
-                <div class="pink-card" style="padding: 20px;">
-                    <strong>Modern Features</strong>
-                    <p style="font-size: 0.9em; margin-top: 10px;">Multiple modes including Story, DLC sequel (Johto), and an endless Replayable Mode.</p>
-                </div>
+            </div>
+        </section>
+
+        <section id="authority-links">
+            <h2>Official Community Resources</h2>
+            <div class="card">
+                <p>Pokémon Reminiscencia has been widely recognized in the fan game community. You can find more discussions and community resources on these official platforms:</p>
+                <ul style="margin-top: 15px;">
+                    <li><a href="https://www.pokecommunity.com/threads/481923/" target="_blank" rel="noopener">Official PokeCommunity Thread</a> - The hub for technical updates and dev logs.</li>
+                    <li><a href="https://reliccastle.com/threads/5614/" target="_blank" rel="noopener">Relic Castle Presentation</a> - Detailed feature lists and community reviews.</li>
+                </ul>
             </div>
         </section>
 
@@ -72,6 +104,16 @@
             <h2>Disclaimer</h2>
             <div class="card" style="border-left: 5px solid #eab308; background: rgba(234, 179, 8, 0.05);">
                 <p style="font-size: 0.9em;">This is a 100% non-profit fan project. We are not affiliated with Nintendo, Game Freak, or The Pokémon Company. Please support official Pokémon releases.</p>
+            </div>
+        </section>
+
+        <section id="cta" class="text-center" style="margin-top: 60px; margin-bottom: 20px;">
+            <div class="card" style="background: var(--pink-light); border: 2px dashed var(--pink);">
+                <h3>Ready to start your adventure?</h3>
+                <p>Join thousands of players in the world of Reminiscencia.</p>
+                <div style="margin-top: 25px;">
+                    <a href="download.html" class="btn" style="font-size: 1.1rem;">Download Complete Edition</a>
+                </div>
             </div>
         </section>
     </main>
